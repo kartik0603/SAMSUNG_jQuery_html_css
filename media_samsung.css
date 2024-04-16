@@ -1,0 +1,65 @@
+@media only screen and (max-width: 769px)
+
+
+
+{
+
+    .nav_bar_main_container {
+        
+        width: 100vw;
+        height: 90px;
+        /* border: 1.5px solid rgb(250, 70, 22); */
+        
+    }
+
+    .click_bar {
+        display: block;
+      }
+
+      .nav_links1_samsung {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 60vw;
+        height: fit-content;
+        text-align: center;
+        background: white;
+        color: black;
+        top: 100px;
+        left: 0px;
+        /* border: 0.5px solid rgb(250, 70, 22); */
+        z-index: 1000;
+      }
+
+      .nav_link2_samsung
+      {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 60vw;
+        height: fit-content;
+        text-align: center;
+        background: white;
+        color: black;
+        top: 100px;
+        left: 0px;
+        /* border: 0.5px solid rgb(250, 70, 22); */
+        z-index: 1000;
+
+      }
+
+      .nav_icons_box
+{
+    
+    width: 15vw;
+    margin-right: 2%;
+    /* border: 1.5px solid rgb(201, 13, 154); */
+
+}
+
+
+
+
+
+
+}

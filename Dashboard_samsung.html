@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samsung India | Mogile | TV | Home Appliances</title>
+  <link rel="shortcut icon" href="samsung favicon logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="samsung.css" />
+  <link rel="stylesheet" href="media_samsung.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="dashboard_samsung.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.cjs.map" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.js">
+  <style>
+      
+    #chart {
+  width: 50vw;
+  /* height: 100%; */
+
+  /* height: max-content; */
+
+  /* margin: 35px auto; */
+}
+
+#myChart
+{
+    width: 50vw;
+    /* height: 100%; */
+
+    /* height: max-content; */
+
+
+}
+  
+</style>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+  
+  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <div class="samsung_heading_text_box">
+        <p class="samsung_heading_text">Dash Board</p>
+      </div>
+
+
+    <div class="chart_container">
+
+     <div class="chart_up_1">
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load('current', {'packages':['corechart']});
+          google.charts.setOnLoadCallback(drawSeriesChart);
+    
+        function drawSeriesChart() {
+    
+          var data = google.visualization.arrayToDataTable([
+            ['ID', 'Life Expectancy', 'Fertility Rate', 'Region',     'Population'],
+            ['CAN',    80.66,              1.67,      'North America',  33739900],
+            ['DEU',    79.84,              1.36,      'Europe',         81902307],
+            ['DNK',    78.6,               1.84,      'Europe',         5523095],
+            ['EGY',    72.73,              2.78,      'Middle East',    79716203],
+            ['GBR',    80.05,              2,         'Europe',         61801570],
+            ['IRN',    72.49,              1.7,       'Middle East',    73137148],
+            ['IRQ',    68.09,              4.77,      'Middle East',    31090763],
+            ['ISR',    81.55,              2.96,      'Middle East',    7485600],
+            ['RUS',    68.6,               1.54,      'Europe',         141850000],
+            ['USA',    78.09,              2.05,      'North America',  307007000]
+          ]);
+    
+          var options = {
+            title: 'Fertility rate vs life expectancy in selected countries (2010).' +
+              ' X=Life Expectancy, Y=Fertility, Bubble size=Population, Bubble color=Region',
+            hAxis: {title: 'Life Expectancy'},
+            vAxis: {title: 'Fertility Rate'},
+            bubble: {textStyle: {fontSize: 11}}
+          };
+    
+          var chart = new google.visualization.BubbleChart(document.getElementById('series_chart_div'));
+          chart.draw(data, options);
+        }
+        </script>
+
+<div id="series_chart_div"></div>
+
+     </div>   
+
+        <div class="chart_up_2">
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['2004',  1000,      400],
+          ['2005',  1170,      460],
+          ['2006',  660,       1120],
+          ['2007',  1030,      540]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <div id="curve_chart" ></div>
+
+        </div>
+
+        <div class="chart_up_3">
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+      
+            function drawChart() {
+              var data = new google.visualization.DataTable();
+              data.addColumn('number', 'x');
+              data.addColumn('number', 'values');
+              data.addColumn({id:'i0', type:'number', role:'interval'});
+              data.addColumn({id:'i1', type:'number', role:'interval'});
+              data.addColumn({id:'i2', type:'number', role:'interval'});
+              data.addColumn({id:'i2', type:'number', role:'interval'});
+              data.addColumn({id:'i2', type:'number', role:'interval'});
+              data.addColumn({id:'i2', type:'number', role:'interval'});
+        
+              data.addRows([
+                  [1, 100, 90, 110, 85, 96, 104, 120],
+                  [2, 120, 95, 130, 90, 113, 124, 140],
+                  [3, 130, 105, 140, 100, 117, 133, 139],
+                  [4, 90, 85, 95, 85, 88, 92, 95],
+                  [5, 70, 74, 63, 67, 69, 70, 72],
+                  [6, 30, 39, 22, 21, 28, 34, 40],
+                  [7, 80, 77, 83, 70, 77, 85, 90],
+                  [8, 100, 90, 110, 85, 95, 102, 110]]);
+        
+              // The intervals data as narrow lines (useful for showing raw source data)
+              var options_lines = {
+                  title: 'Line intervals, default',
+                  curveType: 'function',
+                  lineWidth: 4,
+                  intervals: { 'style':'line' },
+                  legend: 'none'
+              };
+        
+              var chart_lines = new google.visualization.LineChart(document.getElementById('chart_lines'));
+              chart_lines.draw(data, options_lines);
+            }
+          </script>
+
+<div id="chart_lines" ></div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+      <div class="chart_container2">
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load('current', {
+            'packages':['geochart'],
+          });
+          google.charts.setOnLoadCallback(drawRegionsMap);
+    
+          function drawRegionsMap() {
+            var data = google.visualization.arrayToDataTable([
+              ['Country', 'Popularity'],
+              ['Germany', 200],
+              ['United States', 300],
+              ['Brazil', 400],
+              ['Canada', 500],
+              ['France', 600],
+              ['RU', 700]
+            ]);
+    
+            var options = {};
+    
+            var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+    
+            chart.draw(data, options);
+          }
+        </script>
+
+<div id="regions_div" ></div>
+
+
+
+      </div>
+
+    <div class="dashBoard_upper_box">
+        <div class="dashboard_1">
+            <div>
+                <canvas id="myChart"></canvas>
+              </div>
+
+              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+              <script>
+                const ctx = document.getElementById('myChart');
+              
+                new Chart(ctx, {
+                  type: 'polarArea',
+                  data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                      label: 'color choises ',
+                      data: [12, 19, 3, 5, 2, 3],
+                      backgroundColor: [
+      'rgb(255, 99, 132)',
+      'rgb(75, 192, 192)',
+      'rgb(255, 205, 86)',
+      'rgb(201, 203, 207)',
+      'rgb(54, 162, 235)'
+    ],
+                      borderWidth: 1
+                    }]
+                  },
+                  options: {
+                    scales: {
+                      y: {
+                        beginAtZero: true
+                      }
+                    }
+                  }
+                });
+              </script>
+        </div>
+
+        <div class="dashboard_2">
+            
+    <script>
+        window.Promise ||
+          document.write(
+            '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
+          )
+        window.Promise ||
+          document.write(
+            '<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>'
+          )
+        window.Promise ||
+          document.write(
+            '<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>'
+          )
+      </script>
+  
+      
+      <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+      
+  
+      <script>
+        // Replace Math.random() with a pseudo-random number generator to get reproducible results in e2e tests
+        // Based on https://gist.github.com/blixt/f17b47c62508be59987b
+        var _seed = 42;
+        Math.random = function() {
+          _seed = _seed * 16807 % 2147483647;
+          return (_seed - 1) / 2147483646;
+        };
+      </script>
+  
+      
+    </head>
+  
+    <body>
+       <div id="chart"></div>
+  
+      <script>
+        
+          var options = {
+            series: [{
+            name: 'Headphone-Wireless',
+            data: [44, 55, 41, 67, 22, 43]
+          }, {
+            name: 'TV-Speakers',
+            data: [13, 23, 20, 8, 13, 27]
+          }, {
+            name: 'Headphone-Wired',
+            data: [11, 17, 15, 15, 21, 14]
+          }, {
+            name: 'Portable Speakers',
+            data: [21, 7, 25, 13, 22, 8]
+          }],
+            chart: {
+            type: 'bar',
+            height: 350,
+            stacked: true,
+            toolbar: {
+              show: true
+            },
+            zoom: {
+              enabled: true
+            }
+          },
+          responsive: [{
+            breakpoint: 480,
+            options: {
+              legend: {
+                position: 'bottom',
+                offsetX: -10,
+                offsetY: 0
+              }
+            }
+          }],
+          plotOptions: {
+            bar: {
+              horizontal: false,
+              borderRadius: 10,
+              borderRadiusApplication: 'end', // 'around', 'end'
+              borderRadiusWhenStacked: 'last', // 'all', 'last'
+              dataLabels: {
+                total: {
+                  enabled: true,
+                  style: {
+                    fontSize: '13px',
+                    fontWeight: 900
+                  }
+                }
+              }
+            },
+          },
+          xaxis: {
+            type: 'datetime',
+            categories: ['01/01/2011 GMT', '01/02/2011 GMT', '01/03/2011 GMT', '01/04/2011 GMT',
+              '01/05/2011 GMT', '01/06/2011 GMT'
+            ],
+          },
+          legend: {
+            position: 'right',
+            offsetY: 40
+          },
+          fill: {
+            opacity: 1
+          }
+          };
+  
+          var chart = new ApexCharts(document.querySelector("#chart"), options);
+          chart.render();
+        
+        
+      </script>
+  
+            
+        </div>
+        </div>
+    </div>
+
+    <div class="dashBoard_lower_box">
+        <!DOCTYPE HTML>
+<html>
+<head>  
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chart3", {
+	animationEnabled: true,
+	title:{
+		text: "Website Traffic"
+	},
+	axisX:{
+		valueFormatString: "DD MMM"
+	},
+	axisY: {
+		title: "Number of Visitors",
+		scaleBreaks: {
+			autoCalculate: true
+		}
+	},
+	data: [{
+		type: "line",
+		xValueFormatString: "DD MMM",
+		color: "#F08080",
+		dataPoints: [
+			{ x: new Date(2017, 0, 1), y: 610 },
+			{ x: new Date(2017, 0, 2), y: 680 },
+			{ x: new Date(2017, 0, 3), y: 690 },
+			{ x: new Date(2017, 0, 4), y: 700 },
+			{ x: new Date(2017, 0, 5), y: 710 },
+			{ x: new Date(2017, 0, 6), y: 658 },
+			{ x: new Date(2017, 0, 7), y: 734 },
+			{ x: new Date(2017, 0, 8), y: 963 },
+			{ x: new Date(2017, 0, 9), y: 847 },
+			{ x: new Date(2017, 0, 10), y: 853 },
+			{ x: new Date(2017, 0, 11), y: 869 },
+			{ x: new Date(2017, 0, 12), y: 943 },
+			{ x: new Date(2017, 0, 13), y: 970 },
+			{ x: new Date(2017, 0, 14), y: 869 },
+			{ x: new Date(2017, 0, 15), y: 890 },
+			{ x: new Date(2017, 0, 16), y: 930 },
+			{ x: new Date(2017, 0, 17), y: 1850 },
+			{ x: new Date(2017, 0, 18), y: 1905 },
+			{ x: new Date(2017, 0, 19), y: 1980 },
+			{ x: new Date(2017, 0, 20), y: 1858 },
+			{ x: new Date(2017, 0, 21), y: 1034 },
+			{ x: new Date(2017, 0, 22), y: 963 },
+			{ x: new Date(2017, 0, 23), y: 847 },
+			{ x: new Date(2017, 0, 24), y: 853 },
+			{ x: new Date(2017, 0, 25), y: 869 },
+			{ x: new Date(2017, 0, 26), y: 943 },
+			{ x: new Date(2017, 0, 27), y: 970 },
+			{ x: new Date(2017, 0, 28), y: 869 },
+			{ x: new Date(2017, 0, 29), y: 890 },
+			{ x: new Date(2017, 0, 30), y: 930 },
+			{ x: new Date(2017, 0, 31), y: 750 }
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chart3" style="height: 570px; width: 100vw;"></div>
+<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+</body>
+</html>
+    </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+
+
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+
+
+    var Swiper2 = new Swiper(".mySwiper1", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script src="code_for_tab_navigation.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+
+<script>
+
+
+  $(".click_bar").click(() => {
+    $(".nav_links1_samsung").slideToggle();
+  });
+
+  $(".click_bar").click(() => {
+    $(".nav_link2_samsung").slideToggle();
+  });
+
+  $(document).ready(function () {
+    // Function to handle hover effect
+    function handleDropdownHover() {
+      $(".dropdown").hover(
+        function () {
+          $(".dropdown-menu", this)
+            .not(".in .dropdown-menu")
+            .stop(true, true)
+            .slideDown("400");
+          $(this).toggleClass("open");
+        },
+        function () {
+          $(".dropdown-menu", this)
+            .not(".in .dropdown-menu")
+            .stop(true, true)
+            .slideUp("400");
+          $(this).toggleClass("open");
+        }
+      );
+    }
+
+    // Hide the dropdown menus initially
+    $(".dropdown-menu").hide(); // Hide all dropdown menus
+
+    // Restore hover effect state
+    var dropdownState = localStorage.getItem("dropdownState");
+    if (dropdownState) {
+      $(".dropdown").addClass("open");
+      $(".dropdown-menu").slideDown();
+    }
+
+    // Handle hover effect
+    handleDropdownHover();
+
+    // Store hover effect state
+    $(".dropdown").on("mouseenter", function () {
+      localStorage.setItem("dropdownState", true);
+    });
+
+    $(".dropdown").on("mouseleave", function () {
+      localStorage.removeItem("dropdownState");
+    });
+  });
+</script>
